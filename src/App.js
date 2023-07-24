@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>React Form App</h1>
+      <h1 style={{color:'white'}}>React Form App</h1>
       <button onClick={handleOpenForm}>Open Form</button>
       {isFormOpen && <Form isOpen={isFormOpen} onClose={handleCloseForm} />}
     </div>
