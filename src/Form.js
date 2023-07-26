@@ -41,11 +41,11 @@ const handleField1Change = (event) => {
 
   // Example logic: When selecting 'Option 1', update the options of the second field accordingly
   if (selectedValue === 'Blood') {
-    setField2Options(['Blood Glucose Test', 'Blood Gases Test', 'Coagulation Test']);
+    setField2Options(['','Blood Glucose Test', 'Blood Gases Test', 'Coagulation Test']);
   } else if (selectedValue === 'Heart') {
-    setField2Options(['Electrocardiogram (ECG)', 'Magnetic resonance imaging (MRI)', 'Echocardiogram (ultrasound)']);
+    setField2Options(['','Electrocardiogram (ECG)', 'Magnetic resonance imaging (MRI)', 'Echocardiogram (ultrasound)']);
   } else if (selectedValue === 'Kidney') {
-    setField2Options(['Kidney Test']);
+    setField2Options(['','Kidney Test']);
   }
 };
   // const [totalPrice, setTotalPrice] = useState(0);
@@ -186,11 +186,11 @@ const handleField1Change = (event) => {
         </div> */}
         <div className="total-price">
           <u><p><b>Report Type Selected:</b> {selectedValue1}</p></u>
-         <p>Price: {price} Rs</p>
+         <p><b>Price: </b>{price} Rs.</p>
          
          
-         <p>Discount:</p>
-         <p>Total:</p>
+         <p><b>Discount: </b>5 Rs.</p>
+         <p><b>Total: </b>{price-5} Rs.</p>
          
         </div>
         
